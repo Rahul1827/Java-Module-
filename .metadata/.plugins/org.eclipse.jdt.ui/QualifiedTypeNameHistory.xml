@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.UncheckedIOException"/>
+    <fullyQualifiedTypeName name="module7.College"/>
+    <fullyQualifiedTypeName name="module7.Stream"/>
+    <fullyQualifiedTypeName name="module7.Shape"/>
+    <fullyQualifiedTypeName name="module7.Rectangle"/>
+    <fullyQualifiedTypeName name="Static.BankAccount"/>
+    <fullyQualifiedTypeName name="Aggregation.Employee"/>
+    <fullyQualifiedTypeName name="Assignment02October.Person"/>
+</qualifiedTypeNameHistroy>

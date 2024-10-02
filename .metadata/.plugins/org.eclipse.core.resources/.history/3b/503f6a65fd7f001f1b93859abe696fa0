@@ -1,0 +1,18 @@
+package Assignment01October;
+
+public class TestBank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		Bank bank= new Bank(1000);
+		System.out.println(bank.applyInterest());
+		
+		BankA  bankA= new BankA();
+		System.out.println(bankA.getBalance());
+		System.out.println(bankA.applyInterest());
+	}
+
+}

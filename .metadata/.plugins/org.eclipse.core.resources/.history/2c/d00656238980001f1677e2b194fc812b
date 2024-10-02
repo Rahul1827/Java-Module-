@@ -1,0 +1,59 @@
+package module7;
+
+class Stream
+{
+	
+private String type;
+private int fees;
+private int noOfStudents;
+
+
+public Stream(String type, int fees, int noOfStudents) {
+	super();
+	this.type = type;
+	this.fees = fees;
+	this.noOfStudents = noOfStudents;
+}
+@Override
+public String toString() {
+	return "Stream [type=" + type + ", fees=" + fees + ", noOfStudents=" + noOfStudents + "]";
+}
+
+
+
+
+
+}
+
+class College {
+
+	private String name;
+	private char grade;
+	private String address;
+	private String contactNo;
+
+	public college(String name, char grade, String address, String contactNo) {
+		super();
+		this.name = name;
+		this.grade = grade;
+		this.address = address;
+		this.contactNo = contactNo;
+	}
+
+	@Override
+	public String toString() {
+		return "college [name=" + name + ", grade=" + grade + ", address=" + address + ", contactNo=" + contactNo + "]";
+	}
+
+}
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		college
+
+	}
+
+}

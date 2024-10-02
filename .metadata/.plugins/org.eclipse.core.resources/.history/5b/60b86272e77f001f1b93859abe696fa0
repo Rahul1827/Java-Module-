@@ -1,0 +1,14 @@
+package Inheritance;
+
+public class SmartPhone extends Keypad {
+	
+	
+	private String  operatingSystem;
+	private boolean videoCall;
+	private boolean screenshots;
+	private boolean fingerprint;
+	
+	
+	
+
+}

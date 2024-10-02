@@ -1,0 +1,34 @@
+package Operations;
+
+import Entity.Account;
+
+public class AccountOperations {
+	
+	
+	public boolean Withdraw(Account account, double amount)
+
+	{    double bal=account.getBalance();
+		if(bal<amount)
+		{
+			
+			System.out.println("You have a insufficient balance!");
+			return false;
+			
+		} else if(amount<0)
+		{
+			
+			
+			System.out.println("Withdraw amount should not be negative . Please enter amount greater than 0");
+			
+		}
+		else {
+			bal=bal-amount;
+			account.setBalance(bal);
+			return true;
+		}
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,60 @@
+package Operations;
+
+import Entity.Account;
+
+public class AccountOperations {
+	
+	//account : 1, "Rahul", 50000
+	public boolean Withdraw(Account account, double amount) //2000
+
+	{    double bal=account.getBalance(); //50000
+		if(bal<amount)
+		{
+			
+			System.out.println("You have a insufficient balance!");
+			return false;
+			
+		} else if(amount<0)
+		{
+			
+			
+			System.out.println("Withdraw amount should not be negative . Please enter amount greater than 0");
+			return false;
+		}
+		else {
+			bal=bal-amount;   //50000-2000=48000
+			account.setBalance(bal);
+			return true;
+		}
+		
+		
+		
+	}
+	
+	public boolean Deposit(Account account , double amount)
+	{
+		double bal=account.getBalance();
+		
+		if(amount>0)
+		{
+			
+			bal=bal+amount;
+		
+			account.setBalance(bal);
+			
+			System.out.println("Updated Account balance is ="+bal);
+			return true;
+			
+		}
+		else {
+			
+			System.out.println("Amount should be greater than 0");
+			return false;
+		}
+		
+		
+		
+		
+	}
+	
+}

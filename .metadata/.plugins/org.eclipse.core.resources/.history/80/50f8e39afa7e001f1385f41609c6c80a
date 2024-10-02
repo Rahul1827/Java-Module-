@@ -1,0 +1,20 @@
+package module6;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//             Student student = new Student();
+//             
+//             student.display();
+//             student.markAttendance();
+//             
+             System.out.println("*******************************");
+             
+             Student student1=new Student(101,"Rahul",95);
+             student1.display();
+             student1.markAttendance();
+             
+	}
+
+}

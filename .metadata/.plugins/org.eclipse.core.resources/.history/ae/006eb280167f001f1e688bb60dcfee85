@@ -1,0 +1,19 @@
+package module6;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Account account= new Account();
+		System.out.println(account);
+		
+		
+		System.out.println("Parameterized constructor");
+		
+		Account account1= new Account(101, "Rahul", 5100000);
+		System.out.println(account1);
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package Assignment4;
+import java.util.Scanner;
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Enter the employee Salary");
+		 double salary= sc.nextDouble();
+		 
+		 System.out.println("Enter the Working hours of employee");
+		 double workingHours=sc.nextDouble();
+		 
+		 Employee employee = new Employee();
+		 employee.getInfo(salary, workingHours);
+		 employee.addSalary();
+		 employee.addWork();
+		 employee.getFinalSalary();
+		
+		 
+		 
+		 System.out.println("Employee Total salary is ="+employee.getFinalSalary());
+	}
+
+}

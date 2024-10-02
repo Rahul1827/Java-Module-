@@ -1,0 +1,15 @@
+package Inheritance;
+
+public class Employee extends Student {
+	
+	private int empNo;
+	private String company;
+	private double salary;
+	
+	
+	
+	
+
+	
+
+}

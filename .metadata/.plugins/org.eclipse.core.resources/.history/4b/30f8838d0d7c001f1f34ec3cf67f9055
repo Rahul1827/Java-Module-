@@ -1,0 +1,38 @@
+//Assignment 3: Door Access Control
+//Write a program that simulates an access control system.
+//A person is allowed access if they have both a valid ID and a valid access card,
+//or if they are an admin.
+//Requirements:
+//•    Use logical operators &&, ||, and !.
+package Assignment1;
+
+import java.util.Scanner;
+
+public class Ques3 {
+	
+	private String name;
+	private char id, access;
+	private String role;
+	
+	
+	Scanner sc=new Scanner(System.in);
+	
+
+	public void getStudentInfo ()
+	{
+		
+		System.out.println("You have a valid id ?  please write 'Y' or 'N'");
+		id=sc.next().charAt(0);
+				
+		
+		
+		System.out.println("You have a valid access card ?  please write 'Y' or 'N'");
+		access=sc.next().charAt(0);
+		
+		System.out.println("Please enter your role");
+	    role=sc.next();
+		
+		
+	}
+
+}

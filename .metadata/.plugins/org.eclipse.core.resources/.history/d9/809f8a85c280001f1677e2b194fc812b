@@ -1,0 +1,24 @@
+package Assignment02October;
+
+final public class Person {
+	
+	
+	final  String name;
+	final int age;
+	
+	public Person() {
+		// TODO Auto-generated constructor stub
+		
+		name="Rahul";
+		age=24;
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

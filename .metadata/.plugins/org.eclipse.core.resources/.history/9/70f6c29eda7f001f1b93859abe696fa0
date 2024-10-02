@@ -1,0 +1,15 @@
+package Inheritance;
+
+public class TestPerson {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Person person=new Person("Rahul",24, 'M');
+		System.out.println(person);
+		person.display();
+		person.fun1();
+	}
+
+}

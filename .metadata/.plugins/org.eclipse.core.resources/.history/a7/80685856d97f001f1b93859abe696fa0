@@ -1,0 +1,10 @@
+package Inheritance;
+
+public class Student extends Person {
+	protected int rollNo;
+	private String name;
+	private double score;
+	
+	
+
+}

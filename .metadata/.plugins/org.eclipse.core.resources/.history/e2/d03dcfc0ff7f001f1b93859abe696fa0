@@ -1,0 +1,33 @@
+package Assignment01October;
+
+public class TestBank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		
+		System.out.println("Bank A Details");
+		BankA  bankA= new BankA();
+		System.out.println("Balance is :"+bankA.getBalance());
+		System.out.println("Apply Interest :"+bankA.applyInterest());
+		
+		System.out.println("******************************************************");
+		
+		System.out.println("Bank B Details");
+		BankB  bankB= new BankB();
+		System.out.println("Balance is :"+bankB.getBalance());
+		System.out.println("Apply Interest :"+bankB.applyInterest());
+		
+
+		System.out.println("******************************************************");
+		
+		System.out.println("Bank C Details");
+		BankC  bankC= new BankC();
+		System.out.println("Balance is :"+bankC.getBalance());
+		System.out.println("Apply Interest :"+bankC.applyInterest());
+		
+	}
+
+}

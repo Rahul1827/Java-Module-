@@ -1,0 +1,10 @@
+package Assignment02October;
+
+public class GeometricShape {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

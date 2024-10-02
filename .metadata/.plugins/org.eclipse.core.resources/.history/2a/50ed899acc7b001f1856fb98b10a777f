@@ -1,0 +1,19 @@
+package module2;
+
+public class TestStudents {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Student student = new Student();
+		
+		student.attendClass();
+		student.appearExam();
+		student.completeAssignment();
+		student.roll_no=101;
+		student.name="Rahul";
+		student.score=98;
+	}
+
+}

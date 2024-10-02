@@ -1,0 +1,130 @@
+package Userinterface;
+
+import Entity.Account;
+import Operations.AccountOperations;
+
+import java.util.Scanner;
+
+public class TestAccount {
+
+	public static void main(String[] args) {
+
+		Account account = new Account(1, "Rahul", 50000);
+		Account accoun2 = new Account(2, "Pradeep", 30000);
+		AccountOperations accountOperations = new AccountOperations();
+
+		int ch;
+		String choice;
+
+		Scanner sc = new Scanner(System.in);
+
+		do {
+
+			System.out.println("*********Welcome To HDFC Bank*********");
+			System.out.println("1. Accept Details");
+			System.out.println("2. Display Details");
+			System.out.println("3. Withdraw Amount");
+			System.out.println("4. Deposit Amount");
+			System.out.println("5. Transfer Amount");
+			System.out.println("6. Check Balance");
+			System.out.println("7. Update Balance");
+			System.out.println("8. Exit");
+
+			System.out.println("Please Enter your choice");
+
+			ch = sc.nextInt();
+
+			switch (ch) {
+
+			case 1:
+
+				System.out.println("Accepting the details");
+
+				break;
+
+			case 2:
+
+				System.out.println("Displaying the details");
+				System.out.println("Account Number is : " + account.getAccountNo());
+				System.err.println("Account Holder Nbame is :" + account.getAccountHolderName());
+				System.out.println("Account balance is :" + account.getBalance());
+				break;
+
+			case 3:
+
+				System.out.println("Withdrawing the amount");
+
+				System.out.println("Enter the amount to withdraw :");
+				double amount = sc.nextDouble();
+
+				boolean result = accountOperations.Withdraw(account, amount);
+
+				if (result == true) {
+					System.out.println("Withdraw Successfully");
+					System.out.println("Your Balance is :" + account.getBalance());
+
+				}
+
+				else {
+
+					System.out.println("Withdraw failed !!");
+				}
+
+				break;
+
+			case 4:
+
+				System.out.println("Depositing the amount");
+				amount = sc.nextDouble();
+				boolean result1 = accountOperations.Deposit(account, amount);
+
+				if (result1 == true) {
+
+					System.out.println("Amount Deposited Successfully");
+					System.out.println("Your Balance is :" + account.getBalance());
+
+				}
+
+				else {
+
+					System.out.println("Deposited failed !!");
+				}
+
+				break;
+
+			case 5:
+
+				System.out.println("Transfering the amount");
+
+				break;
+
+			case 6:
+
+				System.out.println("Checking the balance");
+
+				break;
+
+			case 7:
+
+				System.out.println("Updating the details");
+
+				break;
+
+			case 8:
+
+				System.exit(0);
+				System.out.println("*********Thanks for banking with us***********");
+
+				break;
+
+			}
+
+			System.out.println("Do you want to continue ?  (Yes or No)");
+
+			choice = sc.next();
+
+		} while (choice.equalsIgnoreCase("Yes"));
+		System.out.println("*********Thanks for banking with us***********");
+
+	}
+}

@@ -1,0 +1,36 @@
+package module3;
+
+public class WhileDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	int count =0;
+	int num=1;
+	
+	while(count<10)
+	{
+		
+		System.out.println("num");
+		num=num+2;
+		count++;
+	}
+	
+	}
+
+}
+
+
+public class FirstTenOddNumbers {
+    public static void main(String[] args) {
+        int count = 0; // To keep track of how many odd numbers have been displayed
+        int number = 1; // Start from the first odd number
+
+        while (count < 10) {
+            System.out.println(number); // Display the odd number
+            number += 2; // Move to the next odd number
+            count++; // Increment the count
+        }
+    }
+}

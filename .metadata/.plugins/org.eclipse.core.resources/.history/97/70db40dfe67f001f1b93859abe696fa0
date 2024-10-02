@@ -1,0 +1,28 @@
+package Inheritance;
+
+public class Keypad extends Mobile {
+	
+	protected String supportedNetwork;
+	protected String messageSupport;
+	protected String soundQuality;
+	protected String batterylife;
+	public Keypad(String compName, int modelNo, String color, String battery, String sim, double price,
+			String supportedNetwork, String messageSupport, String soundQuality, String batterylife) {
+		super(compName, modelNo, color, battery, sim, price);
+		this.supportedNetwork = supportedNetwork;
+		this.messageSupport = messageSupport;
+		this.soundQuality = soundQuality;
+		this.batterylife = batterylife;
+	}
+	@Override
+	public String toString() {
+		return "Keypad [supportedNetwork=" + supportedNetwork + ", messageSupport=" + messageSupport + ", soundQuality="
+				+ soundQuality + ", batterylife=" + batterylife + ", compName=" + compName + ", modelNo=" + modelNo
+				+ ", color=" + color + ", battery=" + battery + ", sim=" + sim + ", price=" + price + "]";
+	}
+	
+	
+	
+	
+
+}
