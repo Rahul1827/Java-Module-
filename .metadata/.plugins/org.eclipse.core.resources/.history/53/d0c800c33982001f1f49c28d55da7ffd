@@ -1,0 +1,21 @@
+package ExceptionHandling;
+import java.util.Scanner;
+public class CheckPassword extends Exception{
+	
+	
+	public CheckPassword(String msg) {
+		// TODO Auto-generated constructor stub
+		super(msg);
+	}
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+	
+
+}
+}

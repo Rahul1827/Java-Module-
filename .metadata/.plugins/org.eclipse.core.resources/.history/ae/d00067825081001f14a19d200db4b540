@@ -1,0 +1,5 @@
+package InerfaceDemo;
+
+public interface Graphic {
+
+}

@@ -1,0 +1,24 @@
+package StringDemo;
+
+public class StringBuilder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		StringBuffer sb= new StringBuffer("Rahul");
+		sb.append("cdac Nashik");
+	System.out.println(sb);
+	
+	int i=sb.indexOf("a");
+	System.out.println("Index is "+i);
+	int i1=sb.lastIndexOf("a");
+	System.out.println("Index of i1 is :"+i1);
+	
+	sb.replace(6, 9, "new");
+	System.out.println(sb);
+	
+	
+	}
+
+}

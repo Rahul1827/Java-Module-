@@ -1,0 +1,68 @@
+package ExceptionHandling;
+import java.util.Scanner;
+
+
+
+
+
+class CheckPassword extends Exception{
+	
+	public CheckPassword(String msg) {
+		// TODO Auto-generated constructor stub
+		super(msg);
+	}
+	
+	
+	
+}
+
+
+public class UserDefinedException {
+	
+	
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the password");
+		String Password = sc.next();
+		
+		try {
+			
+			
+			if(Password.length()<8)
+			
+			{
+				throw new CheckPassword("Password length should be more than 8 characters");
+				
+				
+				
+				
+			}else if(Password.matches("[A-Za-z0-9]")) {
+				
+				
+				throw new CheckPassword ("Password should have special character");
+				
+			}
+			else {
+				
+				
+				System.out.println("Valid Password");
+			}
+		}
+			catch (Exception e) {
+				// TODO: handle exception
+				System.out.println(e.getMessage());
+			}
+			
+			
+			
+	
+		
+	}
+
+
+}
