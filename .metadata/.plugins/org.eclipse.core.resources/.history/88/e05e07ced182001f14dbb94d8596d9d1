@@ -1,0 +1,58 @@
+package Assignment05October;
+
+
+class Book{
+	
+	String bookName;
+	String AuthorName;
+	float price;
+	
+	
+	
+	public Book(String bookName, String authorName, float price) {
+		super();
+		this.bookName = bookName;
+		AuthorName = authorName;
+		this.price = price;
+	}
+	
+	
+	class Library
+	{
+		Book book;
+		int bookQuantity;
+		final int LibraySize=10;
+		
+		public Library(int bookQuantity) {
+			super();
+			this.bookQuantity = bookQuantity;
+		}
+		
+		
+		public void display()
+		{
+			
+			
+			System.out.println("Book name is "+bookName);
+			System.out.println("Author name is "+AuthorName);
+			System.out.println("Price is "+price);
+			
+			
+		}
+		
+	}
+	
+	
+	
+}
+
+
+
+public class LibraryTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
